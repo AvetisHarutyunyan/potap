@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-image: url("https://cdn.wallpapersafari.com/34/18/QXTxsj.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
+  min-height: 100vh;
+  background-color: black;
+}
+
+.district {
+  width: 550px;
+  height: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.district .text__item {
+  position: relative;
+  border: 15px solid black;
+  max-width: 450px;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0, 0, 0, 0.363));
+  -webkit-animation: boxAnime 6s linear infinite;
+          animation: boxAnime 6s linear infinite;
+}
+@-webkit-keyframes boxAnime {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    border: 15px solid white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    border: 15px solid #ffc800;
+    -webkit-box-shadow: 0 0 10px white, 0 0 20px #ffc800, 0 0 40px #ffc800, 0 0 80px #ffc800, 0 0 160px #ffc800;
+            box-shadow: 0 0 10px white, 0 0 20px #ffc800, 0 0 40px #ffc800, 0 0 80px #ffc800, 0 0 160px #ffc800;
+  }
+}
+@keyframes boxAnime {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    border: 15px solid white;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    border: 15px solid #ffc800;
+    -webkit-box-shadow: 0 0 10px white, 0 0 20px #ffc800, 0 0 40px #ffc800, 0 0 80px #ffc800, 0 0 160px #ffc800;
+            box-shadow: 0 0 10px white, 0 0 20px #ffc800, 0 0 40px #ffc800, 0 0 80px #ffc800, 0 0 160px #ffc800;
+  }
+}
+.district .text__item h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 120px;
+  cursor: default;
+  font-weight: 900;
+  -webkit-animation: anime 5s linear infinite;
+          animation: anime 5s linear infinite;
+}
+.district .text__item h1::-moz-selection {
+  display: none;
+}
+.district .text__item h1::selection {
+  display: none;
+}
+@-webkit-keyframes anime {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: white;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #ffc800;
+    text-shadow: 0 0 10px #ffc800, 0 0 20px white, 0 0 40px #ffc800, 0 0 80px #ffc800, 0 0 160px #ffc800;
+  }
+}
+@keyframes anime {
+  0%, 18%, 20%, 50.1%, 60%, 65.1%, 80%, 90.1%, 92% {
+    color: white;
+    text-shadow: none;
+  }
+  18.1%, 20.1%, 30%, 50%, 60.1%, 65%, 80.1%, 90%, 92.1%, 100% {
+    color: #ffc800;
+    text-shadow: 0 0 10px #ffc800, 0 0 20px white, 0 0 40px #ffc800, 0 0 80px #ffc800, 0 0 160px #ffc800;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .district .text__item {
+    max-width: 380px;
+    height: 135px;
+  }
+  .district .text__item h1 {
+    font-size: 95px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .district .text__item {
+    max-width: 350px;
+    height: 125px;
+  }
+  .district .text__item h1 {
+    font-size: 85px;
+  }
+}
+@media screen and (max-width: 370px) {
+  .district .text__item {
+    max-width: 320px;
+    height: 115px;
+  }
+  .district .text__item h1 {
+    font-size: 80px;
+    font-weight: 700;
+  }
+}
+@media screen and (max-width: 320px) {
+  .district .text__item {
+    max-width: 300px;
+    height: 110px;
+  }
+  .district .text__item h1 {
+    font-size: 70px;
+    font-weight: 700;
+  }
+}
