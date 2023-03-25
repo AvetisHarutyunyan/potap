@@ -1,0 +1,180 @@
+@import "./fonts.scss";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "rone-regular";
+}
+
+body {
+    background-image: url("../images/night-potap.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10px;
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.363);
+    background-blend-mode: darken;
+}
+
+.district {
+    width: 550px;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .text__item {
+        position: relative;
+        border: 15px solid rgb(0, 0, 0);
+        max-width: 500px;
+        width: 100%;
+        height: 150px;
+        overflow: hidden;
+        -webkit-box-reflect: below 0 linear-gradient(transparent, rgba(0, 0, 0, 0.363));
+        animation: boxAnime 6s linear infinite;
+
+        @keyframes boxAnime {
+
+            0%,
+            18%,
+            20%,
+            50.1%,
+            60%,
+            65.1%,
+            80%,
+            90.1%,
+            92% {
+                border: 15px solid rgba(255, 255, 255);
+                box-shadow: none;
+            }
+
+            18.1%,
+            20.1%,
+            30%,
+            50%,
+            60.1%,
+            65%,
+            80.1%,
+            90%,
+            92.1%,
+            100% {
+                border: 15px solid rgb(0, 140, 255);
+                box-shadow: 0 0 15px rgb(0, 140, 255),
+                    0 0 20px rgb(255, 255, 255),
+                    0 0 40px rgb(0, 140, 255),
+                    0 0 80px rgb(0, 140, 255),
+                    0 0 160px rgb(0, 140, 255);
+            }
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 130px;
+            cursor: default;
+            animation: anime 5s linear infinite;
+
+            &::selection {
+                display: none;
+            }
+
+            @keyframes anime {
+
+                0%,
+                18%,
+                20%,
+                50.1%,
+                60%,
+                65.1%,
+                80%,
+                90.1%,
+                92% {
+                    color: rgb(255, 255, 255);
+                    text-shadow: none;
+                }
+
+                18.1%,
+                20.1%,
+                30%,
+                50%,
+                60.1%,
+                65%,
+                80.1%,
+                90%,
+                92.1%,
+                100% {
+                    color: rgb(0, 140, 255);
+                    text-shadow: 0 0 10px rgb(0, 140, 255),
+                        0 0 13px rgb(255, 255, 255),
+                        0 0 40px rgb(0, 140, 255),
+                        0 0 80px rgb(0, 140, 255),
+                        0 0 160px rgb(0, 140, 255);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 530px) {
+    body {
+        background-position: -350px;
+    }
+    .district {
+        .text__item {
+            max-width: 380px;
+            height: 135px;
+
+            h1 {
+                font-size: 95px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 428px) {
+    .district {
+        .text__item {
+            max-width: 350px;
+            height: 125px;
+
+            h1 {
+                font-size: 85px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 370px) {
+    .district {
+        .text__item {
+            max-width: 320px;
+            height: 115px;
+
+            h1 {
+                font-size: 80px;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .district {
+        .text__item {
+            max-width: 300px;
+            height: 110px;
+
+            h1 {
+                font-size: 70px;
+                font-weight: 700;
+            }
+        }
+    }
+}
